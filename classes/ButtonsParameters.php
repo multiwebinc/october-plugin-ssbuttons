@@ -110,7 +110,7 @@
                 ],
 
                 'email' => [
-                    'href'  => 'mailto:?subject=' . urlencode($title) . '&body=' . urlencode($title) . ':%20' . urlencode($url),
+                    'href'  => 'mailto:?subject=' . rawurlencode($title) . '&body=' . rawurlencode($title) . ':%20' . rawurlencode($url),
                     'title' => Lang::get('martin.ssbuttons::lang.settings.email.title'),
                     'class' => '',
                     'icon'  => '',
